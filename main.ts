@@ -22,9 +22,9 @@ function run(Pg,In){
       case 1:D[s++]=(Pg[nx-1]<<24)>>24;break;
       case 2:D[s++]=u32(Pg[nx-4],Pg[nx-3],Pg[nx-2],Pg[nx-1]);break;
       case 3:s--;break;
-      case 4:D[s]=D[s-1];s++;break;
+      case 4:D[s]=D[s-1];s++;break
       case 5:{const z=D[s-1];D[s-1]=D[s-2];D[s-2]=z;break}
-      case 6:D[s]=D[s-2];s++;break;
+      case 6:D[s]=D[s-2];s++;break
       case 7:{const a=D[s-3];D[s-3]=D[s-2];D[s-2]=D[s-1];D[s-1]=a;break}
       case 16:case 17:case 18:case 19:case 20:case 21:case 22:case 24:case 25:case 26:case 28:case 29:case 30:case 32:case 33:case 34:{
         const b=D[s-1],a=D[s-2];let r;
